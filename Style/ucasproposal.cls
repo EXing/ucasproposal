@@ -194,6 +194,8 @@
 \newcommand{\institute}[1]{\def\ucas@value@ch@institute{#1}}
 \def\ucas@value@ch@date{}
 \newcommand{\chinesedate}[1]{\def\ucas@value@ch@date{#1}}
+\def\ucas@value@ch@admissiontime{}
+\newcommand{\chineseadmissiontime}[1]{\def\ucas@value@ch@admissiontime{#1}}
 %-
 %-> English item commands
 %-
@@ -228,7 +230,7 @@
             \ucas@label@ch@authorid & \ucaslntotab{\ucas@value@ch@authorid}\\
             \ucas@label@ch@admissiontime & \ucaslntotab{\ucas@value@ch@admissiontime}\\
             \ucas@label@ch@degree & \ulenhance{\ulextend{\ucas@value@ch@degreetype\ucas@value@ch@degree}}\\
-            \ucas@label@ch@school & \ucaslntotab{\ucas@value@ch@school}\\
+            \ucas@label@ch@institute & \ucaslntotab{\ucas@value@ch@institute}\\
             \ucas@label@ch@major & \ulenhance{\ulextend{\ucas@value@ch@major}}\\
             \ucas@label@ch@field & \ulenhance{\ulextend{\ucas@value@ch@field}}\\
             \ucas@label@ch@advisor & \ulenhance{\ulextend{\ucas@value@ch@advisor}}\\
