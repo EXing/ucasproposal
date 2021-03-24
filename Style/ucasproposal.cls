@@ -178,6 +178,8 @@
 \renewcommand{\author}[1]{\def\ucas@value@ch@author{#1}}
 \def\ucas@value@ch@authorid{}
 \newcommand{\authorid}[1]{\def\ucas@value@ch@authorid{#1}}
+\def\ucas@value@ch@admissiontime{}
+\newcommand{\admissiontime}[1]{\def\ucas@value@ch@admissiontime{#1}}
 \def\ucas@value@ch@advisor{}
 \newcommand{\advisor}[1]{\def\ucas@value@ch@advisor{#1}}
 \def\ucas@value@ch@advisortitle{}
@@ -194,8 +196,6 @@
 \newcommand{\institute}[1]{\def\ucas@value@ch@institute{#1}}
 \def\ucas@value@ch@date{}
 \newcommand{\chinesedate}[1]{\def\ucas@value@ch@date{#1}}
-\def\ucas@value@ch@admissiontime{}
-\newcommand{\chineseadmissiontime}[1]{\def\ucas@value@ch@admissiontime{#1}}
 %-
 %-> English item commands
 %-
@@ -218,7 +218,7 @@
 
         {\zihao{1}\bfseries\sffamily \ucas@label@ch@thesis}
 
-        \vspace*{195pt}
+        \vspace*{120pt}
 
         \def\tabcolsep{1pt}
         \def\arraystretch{1.2}
