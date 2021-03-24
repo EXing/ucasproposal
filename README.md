@@ -1,4 +1,4 @@
-# `ucasproposal` 国科大开题报告 LaTeX 模板
+# `ucasproposal` 上科大开题报告 LaTex 模板 改自 国科大开题报告 LaTeX 模板
 
 ## 模板下载
 
