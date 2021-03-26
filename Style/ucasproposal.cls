@@ -276,11 +276,7 @@
     \def\contentsname{\ucas@label@en@tocname}
     \def\listfigurename{\ucas@label@en@lsfigname}
     \def\listtablename{\ucas@label@en@lstabname}
-    \def\bibname{\ucas@label@en@bibname}
-    \def\refname{\ucas@label@en@bibname}
     \def\algname{\ucas@label@en@algname}
-    \def\bibetal{\ucas@label@en@bibetal}
-    \def\biband{\ucas@label@en@biband}
     \def\axiomname{\ucas@label@en@axiomname}
     \def\theoremname{\ucas@label@en@theoremname}
     \def\lemmaname{\ucas@label@en@lemmaname}
@@ -299,10 +295,6 @@
     \def\listfigurename{\ucas@label@ch@lsfigname}
     \def\listtablename{\ucas@label@ch@lstabname}
     \def\algname{\ucas@label@ch@algname}
-    \def\bibname{\ucas@label@ch@bibname}
-    \def\refname{\ucas@label@ch@bibname}
-    \def\bibetal{\ucas@label@ch@bibetal}
-    \def\biband{\ucas@label@ch@biband}
     \def\axiomname{\ucas@label@ch@axiomname}
     \def\theoremname{\ucas@label@ch@theoremname}
     \def\lemmaname{\ucas@label@ch@lemmaname}
