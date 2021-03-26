@@ -1,165 +1,452 @@
-%---------------------------------------------------------------------------%
-%-                                                                         -%
-%-                             Bibliography                                -%
-%-                                                                         -%
-%---------------------------------------------------------------------------%
-@book{wikibook2014latex,
-    title={http://en.wikibooks.org/wiki/LaTeX},
-    author={Wikibook},
-    year={2014},
-    publisher={On-line Resources}
-}
-@book{lamport1986document,
-    title={Document Preparation System},
-    author={Lamport, Leslie},
-    year={1986},
-    publisher={Addison-Wesley Reading, MA}
-}
-@article{chen2005zhulu,
-    title={著录文后参考文献的规则及注意事项},
-    author={陈浩元},
-    key={Chen Hao Yuan},
-    journal={编辑学报},
-    volume={17},
-    number={6},
-    pages={413--415},
-    year={2005}
-}
-@book{chu2004tushu,
-    title={图书馆数字参考咨询服务研究},
-    author={初景利},
-    key={Chu Jing Li},
-    year={2004},
-    address={北京},
-    publisher={北京图书馆出版社}
-}
-@article{stamerjohanns2009mathml,
-    title={{MathML}-aware article conversion from {LaTeX}},
-    author={Stamerjohanns, Heinrich and Ginev, Deyan and David, Catalin and Misev, Dimitar and Zamdzhiev, Vladimir and Kohlhase, Michael},
-    journal={Towards a Digital Mathematics Library},
-    volume={16},
-    number={2},
-    pages={109--120},
-    year={2009},
-    publisher={Masaryk University Press}
-}
-@article{betts2005aging,
-    title={Aging reduces center-surround antagonism in visual motion processing},
-    author={Betts, Lisa R and Taylor, Christopher P},
-    journal={Neuron},
-    volume={45},
-    number={3},
-    pages={361--366},
-    year={2005},
-    publisher={Elsevier}
+@STRING{ACRA = {Proceedings of the Australasian Conference on Robotics and Automation}}
+
+@STRING{ACCV = {Proceedings of the Asian Conference on Computer Vision ({ACCV})}}
+
+@STRING{AI = {Artificial Intelligence}}
+
+@STRING{AR = {Autonomous Robots}}
+
+@STRING{AVC = {Proceedings of the Alvey Vision Conference}}
+
+@STRING{BMVC = {Proceedings of the British Machine Vision Conference ({BMVC})}}
+
+@STRING{CG = {Computers and Graphics}}
+
+@STRING{CVGIP = {Computer Vision, Graphics, and Image Processing}}
+
+@STRING{CVGIPIU = {{CVGIP}: Image Understanding}}
+
+@STRING{CVIU = {Computer Vision and Image Understanding ({CVIU})}}
+
+@STRING{CVPR = {Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition ({CVPR})}}
+
+@STRING{DAGM = {Proceedings of the {DAGM} Symposium on Pattern Recognition}}
+
+@STRING{DICTA = {Proceedings of the Digital Image Computing on Techniques and Applications ({DICTA})}}
+
+@STRING{ECCV = {Proceedings of the European Conference on Computer Vision ({ECCV})}}
+
+@STRING{FATCGV = {Foundations and Trends in Computer Graphics and Vision}}
+
+@STRING{Humanoids = {Proceedings of the {IEEE-RAS} International Conference on Humanoid Robots}}
+
+@STRING{IAV = {Proceedings of the {IFAC} Symposium on Intelligent Autonomous Vehicles ({IAV})}}
+
+@STRING{IBPRIA = {Proceedings of the Iberian Conference on Pattern Recognition and Image Analysis ({IBPRIA})}}
+
+@STRING{ICCV = {Proceedings of the International Conference on Computer Vision ({ICCV})}}
+
+@STRING{ICIP = {Proceedings of the {IEEE} International Conference on Image Processing ({ICIP})}}
+
+@STRING{ICPR = {Proceedings of the International Conference on Pattern Recognition ({ICPR})}}
+
+@STRING{ICRA = {Proceedings of the {IEEE} International Conference on Robotics and Automation ({ICRA})}}
+
+@STRING{IJCAI = {Proceedings of the International Joint Conference on Artificial Intelligence ({IJCAI})}}
+
+@STRING{IJCV = {International Journal of Computer Vision ({IJCV})}}
+
+@STRING{IJHR = {International Journal of Humanoid Robotics ({IJHR})}}
+
+@STRING{IJPRAI = {International Journal of Pattern Recognition in Artificial Intelligence}}
+
+@STRING{IJRR = {International Journal of Robotics Research ({IJRR})}}
+
+@STRING{INES = {Proceedings of the {IEEE} International Conference on Intelligent Engineering Systems}}
+
+@STRING{IROS = {Proceedings of the {IEEE/RSJ} Conference on Intelligent Robots and Systems ({IROS})}}
+
+@STRING{ISMAR = {Proceedings of the International Symposium on Mixed and Augmented Reality ({ISMAR})}}
+
+@STRING{ISER = {Proceedings of the International Symposium on Experimental Robotics ({ISER})}}
+
+@STRING{ISRR = {Proceedings of the International Symposium on Robotics Research ({ISRR})}}
+
+@STRING{ITSC = {Proceedings of the {IEEE} Conference on Intelligent Transportation Systems ({ITSC)}}}
+
+@STRING{IVC = {Image and Vision Computing ({IVC})}}
+
+@STRING{IV = {Proceedings of the {IEEE} Intelligent Vehicles Symposium ({IV})}}
+
+@STRING{JFR = {Journal of Field Robotics {(JFR)}}}
+
+@STRING{JMIV = {Journal of Mathematical Imaging and Vision ({JMIV})}}
+
+@STRING{MED = {Proceedings of the {IEEE} Mediterranean Conference on Control and Automation ({MED})}}
+
+@STRING{MICCAI = {Proceedings of the International Conference on Medical Image Computing and Computer Assisted Intervention ({MICCAI})}}
+
+@STRING{NIPS = {Neural Information Processing Systems ({NIPS})}},
+
+@STRING{PAMI = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence ({PAMI})}}
+
+@STRING{RAM = {{IEEE} Robotics and Automation Magazine}}
+
+@STRING{RAS = {Robotics and Autonomous Systems}}
+
+@STRING{RS = {Robotic Systems}}
+
+@STRING{RSJ = {Proceedings of the Annual Conference of the Robotics Society of Japan ({RSJ})}}
+
+@STRING{RSS = {Proceedings of Robotics: Science and Systems ({RSS})}}
+
+@STRING{STAR = {Springer Tracts in Advanced Robotics {(STAR)}}}
+
+@STRING{SIGGRAPH = {ACM Transactions on Graphics ({SIGGRAPH})}}
+
+@STRING{SMILE2000 = {Proceedings of the 2nd Workshop on Structure from Multiple Images of Large Scale Environments (SMILE), in conjunction with ECCV 2000}}
+
+@STRING{SPIE_EI = {Proceedings of {SPIE} Electronic Imaging}}
+
+@STRING{THREEDPVT = {Proceedings of the International Symposium on 3D Data Processing, Visualization and Transmission ({3DPVT})}}
+
+@STRING{TRA = {{IEEE} Transactions on Robotics and Automation}}
+
+@STRING{TRO = {{IEEE} Transactions on Robotics ({T-RO})}}
+
+@STRING{VC = {The Visual Computer}}
+
+@STRING{WRVS = {Proceedings of the {IEEE} Workshop on Representations of Visual Scenes}}
+
+@STRING{WMVC = {IEEE Workshop on Motion and Video Computing {(WMVC)}}}
+
+%%%%%%%%% AGV with Laser %%%%%%%%%
+
+%Most modern solutions to localization and mapping for self-driving ground vehicles rely on powerful 3D Lidars and high-definition 3D maps of the environment \cite{levinson07,wan18}. 
+
+%old
+@inproceedings{levinson07, author = {Levinson,~J. and Montemerlo,~M. and Thrun,~S.}, title = {Map-based precision vehicle localization in urban environments}, booktitle = RSS, volume = {4}, pages = {1}, year = {2007} }
+
+%new
+@inproceedings{wan18, author = {Wan,~G. and Yang,~X. and Cai,~R. and Li,~H. and Zhou,~Y. and Wang,~H. and Song,~S.}, title = {Robust and precise vehicle localization based on multisensor fusion in diverse city scenes}, booktitle = ICRA, pages = {4670--4677}, year = {2018} }
+
+%%%%%%%%% mono (some tested on AGV, not all) %%%%%%%%%
+
+%A complete review of liar-based solutions would however go beyond the scope of this paper. Our work focusses on the much more affordable, close-to-market solution of a pure vision-based setup. A solid review of the current state of research in vision-based localization and mapping is presented in Cadena et al. \cite{cadena16}. The simplest solution consists of employing a single forward-facing monocular camera and employ either a sparse \cite{murartal15,engel14}, or semi-dense \cite{engel17}. feature detection and tracking solution. It is worth mentioning that vision-based solutions are often complemented by an inertial measurement unit. Both filter-based \cite{li13} and optimisation-based \cite{leutenegger15,lynen15,qin18} are commonly used.
+
+%general
+@article{cadena16, author = {Cadena,~C. and Carlone,~L. and Carrillo,~H. and Latif,~Y. and Scaramuzza,~D. and Neira,~J. and Reid,~I. and Leonard,~J.~J.}, title = {Past, present, and future of simultaneous localization and mapping: Toward the robust perception age}, journal = TRO, volume = {32}, number = {6}, pages = {1309--1332}, year = {2016} }
+
+%monocular
+@article{murartal15, author = {Mur-Artal,~R. and Montiel,~J.~M.~M. and Tardos,~J.~D.}, title = {{ORB-SLAM}: a versatile and accurate monocular {SLAM} system}, journal = TRO, volume = {31}, number = {5}, pages = {1147--1163}, year = {2015} }
+
+@inproceedings{engel14, author = {Engel,~J. and Sch\"ops,~T. and Cremers,~D.}, title = {{LSD-SLAM}: Large-scale direct monocular {SLAM}}, booktitle = ECCV, pages = {834--849}, year = {2014} }
+
+@article{engel17, author = {Engel,~J. and Koltun,~V. and Cremers,~D.}, title = {Direct sparse odometry}, journal = PAMI,
+volume = {40}, number = {3}, pages = {611--625}, year = {2017} }
+
+%visual-inertial
+@article{li13, author = {Li,~M. and Mourikis,~A.~I.}, title = {High-precision, consistent {EKF} based visual-inertial odometry}, journal=IJRR, volume = {32}, number = {6}, pages = {690--711}, year = {2013} }
+
+@article{leutenegger15, author = {Leutenegger,~S. and Lynen,~S. and Bosse,~M. and Siegwart,~R. and Furgale,~P.}, title = {Keyframe-based visual-inertial odometry using nonlinear optimization}, journal = IJRR, volume = {34}, number = {3}, pages = {314--334}, year = {2015} }
+
+@inproceedings{lynen15, author = {Lynen,~S. and Sattler,~T. and Bosse,~M. and Hesch,~J.~A. and Pollefeys,~M. and Siegwart,~R.}, title = {Get out of my lab: Large-scale, realtime visual-inertial localization}, booktitle = RSS, year = {2015} }
+
+@article{qin18, author = {Qin,~T. and Li,~P. and Shen,~S.}, title = {{VINS-MONO}: A robust and versatile monocular visual-inertial state estimator}, journal = TRO, volume = {34}, number = {4}, pages = {1004--1020}, year = {2018} }
+
+%%%%%%%%% AGV with vision-only, stereo %%%%%%%%
+
+%When employing a purely vision-based solution, using only a single camera may easily lead to drift accumulation and robustness issues. Past frameworks tested specifically in ground vehicle applications therefore often employ a stereo \cite{nister06,konolidge07,howard08,kitt10} or a surround-view multi-camera array \cite{furgale13,heng18}. The latter is particularly interesting as it is already commonly installed in modern cars.
+
+@article{nister06, author = {Nister,~D. and Naroditsky,~O. and Bergen,~J.}, title = {Visual odometry for ground vehicle applications}, journal = JFR, volume = {23}, number = {1}, pages = {3--20}, year = {2006} }
+
+@inproceedings{konolige07, author = {Konolige,~K. and Agrawal,~M. and Sola,~J.}, title = {Large-scale visual odometry
+for rough terrain}, booktitle = ISRR, year = {2007} }
+
+@inproceedings{howard08, author = {Howard,~A.}, title  = {Real-time stereo visual odometry for autonomous ground vehicles}, booktitle = IROS, year = {2008}, address = {Nice, France} }
+
+@inproceedings{kitt10, author = {Kitt,~B. and Geiger,~A. and Lategahn,~H.}, title = {Visual Odometry based on Stereo Image Sequences with {RANSAC}-based Outlier Rejection Scheme}, booktitle = IV, year = {2010} }
+
+%%%%%%%%% AGV with vision-only, surround-view %%%%%%%%
+
+@inproceedings{furgale13, author={Furgale,~P. and Schwesinger,~U. and Rufli,~M. and Derendarz,~W. and Grimmett,~H. and Muhlfellner,~P. and Wonneberger,~S. and Li,~B. and Schmidt,~B. and Nguyen,~T.~N. and Cardarelli,~E. and Cattani,~S. and Br\"uning,~S. and Horstmann,~S. and Stellmacher,~M. and Rottmann,~S. and Mielenz,~H. and K\"oser,~K. and Timpner,~J. and Beermann,~M. and H\"ane,~C. and Heng,~L. and Lee,~G.~H. and Fraundorfer,~F. and Iser,~R. and Triebel,~R. and Posner,~I. and Newman,~P. and Wolf,~L. and Pollefeys,~M. and Brosig,~S. and Effertz,~J. and Pradalier,~C. and Siegwart,~R.}, title = {Toward Automated Driving in Cities using Close-to-Market Sensors: an Overview of the {V-Charge} Project}, booktitle = IV, year = {2013} }
+
+@article{heng18,
+    title = {Project {AutoVision}: Localization and 3{D} Scene Perception for an Autonomous Vehicle with a Multi-Camera System},
+    author = {Heng,~L. and Choi,~B. and Cui,~Z. and Geppert,~M. and Hu,~S. and Kuan,~B. and Liu,~P. and Nguyen,~R. and Yeo,~Y.~C. and Geiger,~A. and Lee,~G.~H. and Pollefeys,~M. and Sattler,~T.},
+    year = {2018},
+    journal = {arXiv},
+    volume = {1809.05477}
 }
 
-@article{bravo1990comparative,
-    title={Comparative study of visual inter and intrahemispheric cortico-cortical connections in five native Chilean rodents},
-    author={Bravo, Hermes and Olavarria, Jaime},
-    journal={Anatomy and embryology},
-    volume={181},
-    number={1},
-    pages={67--73},
-    year={1990},
-    publisher={Springer}
-}
-@book{hls2012jinji,
-    author       = {哈里森·沃尔德伦},
-    key          = {Haliseng Woerdelun},
-    translator   = {谢远涛},
-    title        = {经济数学与金融数学},
-    address      = {北京},
-    publisher    = {中国人民大学出版社},
-    year         = {2012},
-    pages        = {235--236},
-}
-@proceedings{niu2013zonghe,
-    editor       = {牛志明 and 斯温兰德 and 雷光春},
-    key          = {Niu Zhi Ming Siwenlande Lei Guang Chun},
-    title        = {综合湿地管理国际研讨会论文集},
-    address      = {北京},
-    publisher    = {海洋出版社},
-    year         = {2013},
-}
-@incollection{chen1980zhongguo,
-    author       = {陈晋镳 and 张惠民 and 朱士兴 and 赵震 and
-        王振刚},
-    key          = {Chen Jing Ao Zhang Hui Ming Zhu Shi Xing Zhao Zhen Wang Zhen Gang},
-    title        = {蓟县震旦亚界研究},
-    editor       = {中国地质科学院天津地质矿产研究所},
-    booktitle    = {中国震旦亚界},
-    address      = {天津},
-    publisher    = {天津科学技术出版社},
-    year         = {1980},
-    pages        = {56--114},
-}
-@article{yuan2012lana,
-    author       = {袁训来 and 陈哲 and 肖书海},
-    key          = {Yuan xun lai Chen zhe Xiao shu Hai},
-    title        = {蓝田生物群: 一个认识多细胞生物起源和早期演化的新窗口 -- 篇一},
-    journal      = {科学通报},
-    year         = {2012},
-    volume       = {57},
-    number       = {34},
-    pages        = {3219},
-}
-@article{yuan2012lanb,
-    author       = {袁训来 and 陈哲 and 肖书海},
-    key          = {Yuan xun lai Chen zhe Xiao shu Hai},
-    title        = {蓝田生物群: 一个认识多细胞生物起源和早期演化的新窗口 -- 篇二},
-    journal      = {科学通报},
-    year         = {2012},
-    volume       = {57},
-    number       = {34},
-    pages        = {3219},
-}
-@article{yuan2012lanc,
-    author       = {袁训来 and 陈哲 and 肖书海},
-    key          = {Yuan xun lai Chen zhe Xiao shu Hai},
-    title        = {蓝田生物群: 一个认识多细胞生物起源和早期演化的新窗口 -- 篇三},
-    journal      = {科学通报},
-    year         = {2012},
-    volume       = {57},
-    number       = {34},
-    pages        = {3219},
-}
-@article{walls2013drought,
-    author       = {Walls, Susan C. and Barichivich, William J. and Brown, Mary
-        E.},
-    title        = {Drought, deluge and declines: the impact of precipitation
-        extremes on amphibians in a changing climate},
-    journal      = {Biology},
-    year         = {2013},
-    volume       = {2},
-    number       = {1},
-    pages        = {399--418},
-    urldate      = {2013-11-04},
-    url          = {http://www.mdpi.com/2079-7737/2/1/399},
-    doi          = {10.3390/biology2010399},
-}
-@article{Bohan1928,
-    author = { ボハン, デ},
-    title = { 過去及び現在に於ける英国と会 },
-    journal = { 日本時報 },
-    year = { 1928 },
-    volume = { 17 },
-    pages = { 5-9 },
-    edition = { 9 },
-    hyphenation = { japanese },
-    language = { japanese }
+%%%%%%%%% AGV with odometry sensors %%%%%%%%%%%%
+
+%punchline hints: these works 1) either use alternative sensors to perform reintegration based on a kinematic model, and then add this as a regularisation constraint to the optimisation or embed into the state transition model (often assuming planar motion), 2) or they simply impose the non-holonomic constraint as a regularisation term between sub-sequent keyframes (again, mostly based on planar assumption). Note however that the is only an approximation and relies on the assumption that the steering angle is piece-wise constant, which is not the case! Then there is the mani fold work, but that one is also 
+
+%The present work considers the improvement of a pure monocular SLAM solution by including vehicle kinematics related constraints into the optimisation framework. This technique is already commonly applied to vision-based multi-sensor solutions that make additional use of odometers measuring the rotational velocity of each wheel. There have been EKF filter \cite{wu17}, particle filter \cite{yap11}, and optimisation-based\cite{quan18,kang2019vins} solutions, which all rely on a driftless planar motion model as derived from a dual-drive or Ackermann steering platform. They perform relatively high-frequent integration of such information to come up with adequate priors on the relative displacement between subsequent views. Censi et al. \cite{censi13} furthermore consider simultaneous extrinsic calibration between cameras and odometers. A closely related vehicle motion model that has also been used in filtering and optimisation based frameworks appears for skid-steering platforms \cite{yi09,martinez17,lv17}. However, although slippage occurs, non-holonomic models relying on the Instantaneous Centre of Rotation still explain the motion of skid-steering platforms relatively well, which is why our work may also be applied to such platforms \cite{martinez05}. A very closely related work to ours is given Zhang et al. \cite{zhang19}, who still rely on a driftless non-holonomic motion model, but extend the estimation to non-planar environments by introducing the motion-manifold and manifold-based integration of odometry signals.
+
+%monocular, planar/Ackermann constraint, no slippage, EKF filter
+@inproceedings{wu17, author = {Wu,~K.~J. and Guo,~C.~X. and Georgiou,~G. and Roumeliotis,~S.~I.}, title = {{VINS on wheels}}, booktitle = ICRA, year = {2017}, pages = {5155--5162} }
+
+%monocular, planar/Ackermann constraint, no slippage, particle filter
+@inproceedings{yap11, author = {Yap,~T. and Li,~M. and Mourikis,~A.~I. and Shelton,~C.~R.}, title = {A particle filter for monocular vision aided odometry}, booktitle = ICRA, year = {2011}, pages = {5663--5669} }
+
+%monocular, planar/Ackermann constraint, no/limited slippage, optimisation based
+@article{quan18, author = {Quan,~M. and Piao,~S. and Tan,~M. and Huang,~S.-S.}, title = {{Tightly-coupled Monocular Visual-odometric SLAM using Wheels and a MEMS Gyroscope}}, journal = {arXiv}, volume = {1804.04854}, year = {2018} }
+
+%Another work, which is very related in fact
+@inproceedings{kang2019vins,
+  title={VINS-Vehicle: A Tightly-Coupled Vehicle Dynamics Extension to Visual-Inertial State Estimator},
+  author={Kang, Rong and Xiong, Lu and Xu, Mingyu and Zhao, Junqiao and Zhang, Peizhi},
+  booktitle={2019 IEEE Intelligent Transportation Systems Conference (ITSC)},
+  pages={3593--3600},
+  year={2019},
+  organization={IEEE}
 }
 
-@article{Dubrovin1906,
-    author = { Дубровин, А. И },
-    title = { Открытое письмо Председателя Главного Совета Союза Русского Народа Санкт-Петербургскому Антонию, Первенствующему члену Священного Синода },
-    journal = { Вече },
-    year = { 1906 },
-    volume = {  },
-    edition = { 97 },
-    month = { 7 дек. 1906 },
-    pages = { 1-3 },
-    hyphenation = { russian },
-    language = { russian }
+%with calibration
+@article{censi13, author = {Censi,~A. and Franchi,~A. and Marchionni,~L. and Oriolo,~G.}, title = {Simultaneous calibration of odometry and sensor parameters for mobile robots}, journal = TRO, volume = {29}, number = {2}, year = {2013}, pages = {475--492} }
+
+%skid-steering vehicles, ICR based models still explain the motion relatively well, also non-holonomic (perhaps a bit less smooth than the Ackermann model, but still)
+
+%8 (shows that ICR parameters have relatively slow variation!)
+@article{martinez05, author = {Martinez,~J.~L. and Mandow,~A. and Morales,~J. and Pedraza,~S. and Garcia-Cerezo,~A.}, title = {Approximating kinematics for tracked mobile robots}, journal = IJRR, volume = {24}, number = {10}, year = {2005}, pages = {867--878} }
+
+%methods that also perform the slippage estimation based on the previous model last one has wheel encoder, gyroscope, magnetometer
+
+@article{yi09, author = {Yi,~J. and Wang,~H. and Zhang,~J. and Song,~D. and Jayasuriya,~S. and Liu,~J.}, title = {Kinematic modelling and analysis of skid-steered mobile robots with applications to low-cost inertial-measurement unit-based motion estimation}, journal = TRO, volume = {25}, number = {5}, year = {2009} }
+@inproceedings{martinez17, author = {Martinez,~J.~L. and Morales,~J. and Mandow,~A. and Pedraza,~S. and Garcia-Cerezo,~A.}, title = {Inertia-based {ICR} kinematic model for tracked skid-steer robots}, booktitle = {IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR)}, year = {2017}, pages = {166--171} }
+@article{lv17, author = {Lv,~W. and Kang,~Y. and Qin,~J.}, title = {Indoor localization for skid-steering mobile robot by fusing encoder, gyroscope, and magnetometer}, journal = {IEEE Transactions on Systems, Man, and
+Cybernetics (SMC)}, volume = {99}, year = {2017}, pages = {1--13} }
+
+%highly related to ours: motion-manifold, manifold-based integration of sensor signals, works in non-planar, sliding-window based
+@article{zhang19, author = {Zhang,~M. and Zuo,~X. and Chen,~Y. and Li,~M.}, title = {Localization for Ground Robots: On Manifold Representation, Integration, Re-Parameterization, and Optimization}, journal = {arXiv}, volume = {1909.03423}, year = {2019} }
+@inproceedings{zhang19b, author = {Zhang,~M. and Chen,~Y. and Li,~M.}, title = {Vision-Aided Localization For Ground Robots}, booktitle = IROS, year = {2019} }
+
+%%%%%%%%% Pure vision-based: Closed form solvers (ackermann) %%%%%%%%%%%
+
+%For pure vision-based solutions, respecting the holonomic constraints is more difficult. Scaramuzza \cite{scaramuzza2009,scaramuzza2011} successfully introduced the Ackermann motion model into relative camera displacement estimation, thus leading to highly robust solutions based on 1-point ransac or 1D histogram voting. Huang et al. \cite{huang19} recently extended the method to an n-frame solver, while Lee et al. \cite{lee13} successfully applied the technique to a multi-camera array. Long et al. \cite{zong2017vehicle} and Li et al. \cite{li18} have included similar constraints into windowed optimisation frameworks, which essentially enforce the trajectory to be composed of piece-wise circular arcs.
+
+@article{scaramuzza2011,
+  title={1-point-ransac structure from motion for vehicle-mounted cameras by exploiting non-holonomic constraints},
+  author={Scaramuzza, Davide},
+  journal=IJCV,
+  volume={95},
+  number={1},
+  pages={74--85},
+  year={2011},
+  publisher={Springer}
 }
-%---------------------------------------------------------------------------%
+
+@inproceedings{scaramuzza2009real,
+  title={Real-time monocular visual odometry for on-road vehicles with 1-point ransac},
+  author={Scaramuzza, Davide and Fraundorfer, Friedrich and Siegwart, Roland},
+  booktitle=ICRA,
+  pages={4293--4299},
+  year={2009},
+  organization={Ieee}
+}
+
+@INPROCEEDINGS{huang19,
+  Author = {K Huang and Y Wang and L Kneip},
+  Title = {Motion estimation of non-holonomic ground vehicles from a single feature correspondence measured over n views},
+  Booktitle = CVPR,
+  Address = {Long Beach, USA},
+  Year = {2019}
+}
+
+@inproceedings{lee13, title={Motion estimation for self-driving cars with a generalized camera}, author={Lee,~G.~H. and Faundorfer,~F. and Pollefeys,~M.}, booktitle = CVPR, pages={2746--2753}, year={2013} }
+
+@inproceedings{yifu2020vehicle,
+  title={Reliable frame-to-frame motion estimation for vehicle-mounted surround-view camera systems},
+  author={Wang, Yifu and Huang, Kun and Peng, Xin and Li, Hongdong and Kneip, Laurent},
+  booktitle=ICRA,
+  pages={1660--1666},
+  year={2020},
+  organization={IEEE}
+}
+
+%%%%%%%%% Pure vision-based: Optimisation based %%%%%%%%%%%
+
+% This one here is quite related, but also uses fiducial markers, and only adds the vehicle dynamic model constraints based on piece-wise constant steering angle
+@inproceedings{zong2017vehicle,
+  title={Vehicle model based visual-tag monocular {ORB-SLAM}},
+  author={Zong, Wenhao and Chen, Longquan and Zhang, Changzhu and Wang, Zhuping and Chen, Qijun},
+  booktitle={2017 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+  pages={1441--1446},
+  year={2017},
+  organization={IEEE}
+}
+
+%This work performs ground plane classification and introduces a polynomial model for the ground plane, which is then used for the estimation
+@inproceedings{lee15, author = {Lee,~B. and Daniilidis,~K. and Lee,~D.~D.}, title = {Online selfsupervised monocular visual odometry for ground vehicles}, booktitle = ICRA, pages = {5232--5238}, year = {2015} }
+
+%From Shen Shaojie's work
+@inproceedings{li18,
+  title={Stereo vision-based semantic 3d object and ego-motion tracking for autonomous driving},
+  author={Li, Peiliang and Qin, Tong and others},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={646--661},
+  year={2018}
+}
+
+
+%%%%%%%%%%%%%%% Continuous-time motion estimation %%%%%%%%%%%%%%
+
+%A more correct imposition of non-holonomic constraints on the motion of a ground vehicle has been proposed in the robotics and control societies. The related works mostly aim at planning feasible trajectories for driftless ground vehicles, a challenging problem if both spatial and temporal constraints need to be taken into account. A in-depth introduction to the topic is given in \cite{soueres98}. Babu et al. \cite{babu17} recently introduce smooth collision-free trajectory planning for non-holonomic curvature-bounded vehicles based on alternating optimisation of linear velocities and angular accelerations. The problem simplifies if only considering geometric feasibility, in which case the vehicle trajectory can modelled using clothoids. For example, Lundberg \cite{lundberg17} introduces clothoid-based smoothing in A* path planning.
+
+%From a purely geometric point of view, a driftless, non-holonomic ground vehicle moves along smooth trajectories in space, and---more importantly---its heading keeps pointing along the tangential of its trajectory. This motivates our use of continuous-time trajectories as proposed by Furgale et al. \cite{furgale2015continuous}. While parametrising a smooth vehicle trajectory, the representation is easily used to additionally constraint part of the vehicle orientation by considering first-order differentials.
+
+%in the realm of control society, keyword: feasible trajectories for driftless systems, vehicle moves tangentially to its main axis
+
+%Optimal control of feasible trajectories
+@incollection{soueres98,
+  author      = {Sou\'eres,~P. and Boissonnat,~J.~D.},
+  title       = {Optimal Trajectories for Nonholonomic Mobile Robots},
+  editor      = {Jean-Paul Laumond},
+  booktitle   = {Robot Motion Planning and Control},
+  year        = {1998},
+  pages       = {93--166},
+  chapter     = {3},
+}
+
+%trajectory optimization for computing smooth collision free trajectories for nonholonomic curvature bounded vehicles, alternating optimisation of linear velocities and angular accelerations
+@article{babu17, author = {Babu,~M. and Oza,~Y. and Balaji,~C.~A. and Singh,~A.~K. and Gopalakrishnan,~B. and Krishna,~K.~M.},
+  title = {Trajectory Optimization for Curvature Bounded Non-Holonomic Vehicles: Application to Autonomous Driving},
+  journal   = {arXiv},
+  volume    = {1712.04978},
+  year      = {2017}
+}
+
+%Based on clothoids
+@phdthesis{lundberg17, author = {Lundberg,~M.}, title = {{Path planning for autonomous vehicles using clothoid based smoothing of A* generated paths and optimal control}}, year = {2017}, school = {KTH Royal Institute of Technology, School of Engineering Sciences} }
+
+%THE work of Barefoot et al.
+@article{furgale2015continuous,
+  title={Continuous-time batch trajectory estimation using temporal basis functions},
+  author={Furgale, Paul and Tong, Chi Hay and Barfoot, Timothy D and Sibley, Gabe},
+  journal={The International Journal of Robotics Research},
+  volume={34},
+  number={14},
+  pages={1688--1710},
+  year={2015},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%% Other SLAM works (I think this can all be safely ignored!) %%%%%%%%%%%%%%%%%%%%%%
+
+@article{guerrero2005visual,
+  title={Visual map-less navigation based on homographies},
+  author={Guerrero, Jos{\'e} Jes{\'u}s and Martinez-Cantin, Ruben and Sag{\"u}{\'e}s, Carlos},
+  journal={Journal of Robotic Systems},
+  volume={22},
+  number={10},
+  pages={569--581},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{wang2005visual,
+  title={Visual odometry based on locally planar ground assumption},
+  author={Wang, Hui and Yuan, Kui and Zou, Wei and Zhou, Qingrui},
+  booktitle={2005 IEEE International Conference on Information Acquisition},
+  pages={6--pp},
+  year={2005},
+  organization={IEEE}
+}
+
+@inproceedings{liang2002visual,
+  title={Visual navigation using planar homographies},
+  author={Liang, Bojian and Pears, Nick},
+  booktitle={Proceedings 2002 IEEE International Conference on Robotics and Automation (Cat. No. 02CH37292)},
+  volume={1},
+  pages={205--210},
+  year={2002},
+  organization={IEEE}
+}
+
+@article{bailey2006simultaneous,
+  title={Simultaneous localization and mapping (SLAM): Part II},
+  author={Bailey, Tim and Durrant-Whyte, Hugh},
+  journal={IEEE robotics \& automation magazine},
+  volume={13},
+  number={3},
+  pages={108--117},
+  year={2006},
+  publisher={IEEE}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Miscellaneous %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@MISC{eigen,
+  author = {Ga\"{e}l Guennebaud and Beno\^{i}t Jacob and others},
+  title = {Eigen v3},
+  howpublished = {http://eigen.tuxfamily.org},
+  year = {2010}
+}
+
+@article{opencv_library, author = {Bradski,~G.}, journal = {Dr. Dobb's Journal of Software Tools}, title = {{The OpenCV Library}}, year = {2000} }
+
+@INPROCEEDINGS{Geiger2012CVPR,
+  author = {Andreas Geiger and Philip Lenz and Raquel Urtasun},
+  title = {{Are we ready for Autonomous Driving? The KITTI Vision Benchmark Suite}},
+  booktitle = CVPR,
+  year = {2012}
+}
+
+@book{piegl2012nurbs,
+  title={The NURBS book},
+  author={Piegl, Les and Tiller, Wayne},
+  year={2012},
+  publisher={Springer Science \& Business Media}
+}
+
+@misc{ceres-solver,
+  author = "Sameer Agarwal and Keir Mierle and Others",
+  title = "Ceres Solver",
+  howpublished = "\url{http://ceres-solver.org}",
+}
+
+@article{kang1999cubic,
+  title={Cubic spline algorithms for orientation interpolation},
+  author={Kang, IG and Park, FC},
+  journal={International Journal for Numerical Methods in Engineering},
+  volume={46},
+  number={1},
+  pages={45--64},
+  year={1999},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{peng2019articulated,
+  title={Articulated Multi-Perspective Cameras and Their Application to Truck Motion Estimation},
+  author={Peng, Xin and Cui, Jiadi and Kneip, Laurent and others},
+  year={2019},
+  organization={Institute of Electrical and Electronics Engineers Inc.}
+}
+
+@inproceedings{rublee2011orb,
+  title={ORB: An efficient alternative to SIFT or SURF},
+  author={Rublee, Ethan and Rabaud, Vincent and Konolige, Kurt and Bradski, Gary},
+  booktitle={2011 International conference on computer vision},
+  pages={2564--2571},
+  year={2011},
+  organization={Ieee}
+}
+
+@InProceedings{ sturm12iros,
+	author = {J. Sturm and N. Engelhard and F. Endres and W. Burgard and D. Cremers},
+	title = "A Benchmark for the Evaluation of RGB-D SLAM Systems",
+	booktitle = "Proc. of the International Conference on Intelligent Robot Systems (IROS)",
+	year = "2012",
+	month= "Oct.",
+}
+
+@book{ma2012invitation,
+  title={An invitation to 3-d vision: from images to geometric models},
+  author={Ma, Yi and Soatto, Stefano and Kosecka, Jana and Sastry, S Shankar},
+  volume={26},
+  year={2012},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{mur2017orb,
+  title={Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras},
+  author={Mur-Artal, Raul and Tard{\'o}s, Juan D},
+  journal={IEEE Transactions on Robotics},
+  volume={33},
+  number={5},
+  pages={1255--1262},
+  year={2017},
+  publisher={IEEE}
+}
